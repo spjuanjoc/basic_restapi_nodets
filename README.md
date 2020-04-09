@@ -1,4 +1,4 @@
-# Basic REST API nodets
+# Basic REST API nodejs-ts
 
 Basic REST API in TypeScript with NodeJS-express to store items in a list.
 
@@ -7,6 +7,25 @@ Port: 3000
 # Dependencies
 
 * Libraries
+    - express 
+    - body-parser 
+    - nodemon
+
+* Types 
+    - @types/node 
+    - @types/express
+
+# Install dependencies
+* Auto
+````
+$ npm install
+````
+
+* Manual
+* Libraries
+    - express 
+    - body-parser 
+    - nodemon
 ````shell script
 $ npm install --save-dev express body-parser nodemon
 ````
@@ -15,13 +34,18 @@ $ npm install --save-dev express body-parser nodemon
 ````shell script
 $ npm install --save-dev @types/node @types/express
 ````
+## Compilation
+````shell script
+~/basic_restapi_nodets$ tsc
+````
 
 # Run server
+Start nodemon
 ````shell script
 $ npm start
 ````
 
-# Requests
+# HTTP Requests
 The body must be in `json` format
 * POST http://localhost:3000/api/items/
 ````json
@@ -44,6 +68,4 @@ The body must be in `json` format
 ````
 
 #
-Written with WebStorm.
-
-Tested with Postman.
+Using: WebStorm and Postman.
